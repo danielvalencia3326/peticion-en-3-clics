@@ -33,4 +33,5 @@ Una Causa puede tener muchos Apoyos (relación 1 a N).
 La clave foránea causa_id en la tabla Apoyos garantiza que cada apoyo esté vinculado a una causa existente.
 
 PRIVACIDAD:
-El modelo de datos no almacena información sensible como cédulas, teléfonos, direcciones ni correos reales, en cumplimiento con el principio de minimización de datos.
+El modelo de datos no almacena información sensible como cédulas, teléfonos, direcciones ni correos reales, en 
+cumplimiento con el principio de minimización de datos.
