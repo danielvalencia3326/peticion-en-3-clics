@@ -1,0 +1,15 @@
+Flujo del sistema "Petición en 3 Clics"
+
+1. El ciudadano ingresa a la plataforma, visualiza el aviso de privacidad y el formulario para crear una causa comunitaria.
+
+2. Completa los campos obligatorios: título y descripción de la necesidad, y hace clic en "Crear causa". El sistema envía los datos al backend y los guarda en la tabla "causas" de SQLite.
+
+3. La causa recién creada aparece automáticamente en el listado de causas registradas, mostrando su título, descripción, fecha de creación y un contador de apoyos inicial en cero.
+
+4. Otros ciudadanos pueden leer la causa y decidir apoyarla. Para ello, escriben un nombre de práctica (no real) y un comentario opcional, y hacen clic en "Apoyar causa".
+
+5. El sistema registra el apoyo en la tabla "apoyos" de SQLite, asociándolo a la causa mediante una clave foránea (causa_id). El contador de apoyos de esa causa se actualiza en tiempo real en la interfaz.
+
+6. El ciudadano puede descargar un documento PDF que resume toda la información de la causa: el título, la descripción, la fecha de creación, el número total de apoyos y el listado de comentarios. El PDF incluye una advertencia jurídica que indica que es un borrador de práctica.
+
+7. Si la automatización está configurada, cada vez que se registra un nuevo apoyo, el sistema envía una notificación general a n8n (sin datos personales), y n8n reenvía un mensaje por Telegram avisando que hay un nuevo apoyo. Si la automatización falla, el apoyo se registra igual y el sistema continúa funcionando sin problemas.

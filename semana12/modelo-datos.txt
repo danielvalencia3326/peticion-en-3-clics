@@ -1,0 +1,36 @@
+Modelo de datos básico para Petición en 3 Clics
+
+El sistema utiliza dos entidades principales para almacenar la información de las causas comunitarias y los apoyos ciudadanos.
+
+
+ENTIDAD 1: Causa
+Representa una necesidad o solicitud de la comunidad que ha sido organizada y registrada en la plataforma.
+
+Campos:
+- id: Identificador único de la causa (autoincrementable).
+- titulo: Título breve y claro de la causa (obligatorio).
+- descripcion: Explicación detallada de la necesidad comunitaria (obligatorio).
+- fecha_creacion: Fecha y hora en que se registró la causa (se genera automáticamente).
+
+Propósito: Permite almacenar y organizar las causas creadas por los ciudadanos, para que otros puedan visualizarlas y apoyarlas.
+
+
+ENTIDAD 2: Apoyo
+Representa el respaldo de una persona a una causa específica.
+
+Campos:
+- id: Identificador único del apoyo (autoincrementable).
+- causa_id: Identificador de la causa a la que pertenece este apoyo (clave foránea).
+- nombre: Nombre de práctica de la persona que apoya (obligatorio).
+- comentario: Opinión o mensaje de respaldo (opcional).
+- fecha: Fecha y hora en que se registró el apoyo (se genera automáticamente).
+
+Propósito: Permite registrar y contar los apoyos que recibe cada causa, y mostrar los comentarios de los ciudadanos que respaldan la iniciativa.-
+
+
+RELACIÓN ENTRE ENTIDADES:
+Una Causa puede tener muchos Apoyos (relación 1 a N).
+La clave foránea causa_id en la tabla Apoyos garantiza que cada apoyo esté vinculado a una causa existente.
+
+PRIVACIDAD:
+El modelo de datos no almacena información sensible como cédulas, teléfonos, direcciones ni correos reales, en cumplimiento con el principio de minimización de datos.
