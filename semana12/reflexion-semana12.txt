@@ -1,3 +1,9 @@
-Aprendí que la tecnología no es solo código, sino una herramienta para darle voz a las comunidades. Lo que más me llamó la atención fue cómo se puede organizar una causa, sumar apoyos y generar un documento PDF sin necesidad de pedir datos sensibles como cédula o teléfono. Eso me hizo entender que la participación ciudadana no tiene que invadir la privacidad de las personas.
+Aprendí que la tecnología no es solo código, sino una herramienta para darle voz a las comunidades. Lo que más me 
+llamó la atención fue cómo se puede organizar una causa, sumar apoyos y generar un documento PDF sin necesidad de 
+pedir datos sensibles como cédula o teléfono. Eso me hizo entender que la participación ciudadana no tiene que invadir 
+a privacidad de las personas.
 
-También vi lo importante que es automatizar procesos de forma responsable, como con n8n y Telegram, avisando que alguien apoyó una causa, pero sin exponer su nombre ni su comentario. Además, aprendí que un proyecto no termina cuando funciona, sino cuando está bien documentado para que otra persona pueda continuarlo. En resumen, la tecnología comunitaria debe ser sencilla, clara y, sobre todo, respetuosa con quienes la usan.
+También vi lo importante que es automatizar procesos de forma responsable, como con n8n y Telegram, avisando que 
+alguien apoyó una causa, pero sin exponer su nombre ni su comentario. Además, aprendí que un proyecto no termina c
+uando funciona, sino cuando está bien documentado para que otra persona pueda continuarlo. En resumen, la tecnología 
+comunitaria debe ser sencilla, clara y, sobre todo, respetuosa con quienes la usan.
